@@ -21,5 +21,6 @@ locals {
     public_subnet_tags = merge(local.common_tags, var.public_subnet_tags)
     private_subnet_tags = merge(local.common_tags, var.private_subnet_tags)
     database_subnet_tags = merge(local.common_tags, var.database_subnet_tags)
+    
 }
 
