@@ -1,6 +1,6 @@
 output "az_info"{
-    value = aws_availability_zones.available.names
+    value = data.aws_availability_zones.available.names
 }
 output "vpc_id" {
-    value =  aws.vpc.main.id
+    value = data.aws.vpc.main.vpc_id
 }
